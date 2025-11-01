@@ -1,0 +1,15 @@
+{
+  "questions": [
+    "What journey do you want? (Buy / Change / Support / Terminate)",
+    "Which TMF API (if you know)?",
+    "Which market / variant?",
+    "What is the source CSM object / payload?",
+    "What do you want to generate? (Blueprint / API skeleton / both)"
+  ],
+  "routingRules": {
+    "Buy": "TMF622",
+    "Change": "TMF641",
+    "Support": "TMF621",
+    "Customer": "TMF629"
+  }
+}
