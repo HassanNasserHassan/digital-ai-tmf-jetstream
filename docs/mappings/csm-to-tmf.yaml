@@ -1,0 +1,20 @@
+version: 0.1
+journey: "Buy"
+targetTMF: "TMF622"
+mappings:
+  - csm: "customerId"
+    tmf: "ProductOrder.relatedParty[0].id"
+    rule: "role must be 'Customer'"
+    mandatory: true
+  - csm: "offerCode"
+    tmf: "ProductOrder.orderItem[0].product.productOffering.id"
+    mandatory: true
+  - csm: "salesChannel"
+    tmf: "ProductOrder.channel.name"
+    mandatory: false
+  - csm: "notes"
+    tmf: "ProductOrder.note[0].text"
+    mandatory: false
+  - csm: "??"
+    tmf: "ProductOrder.orderItem[0].appointment"
+    note: "TODO: market-specific"
