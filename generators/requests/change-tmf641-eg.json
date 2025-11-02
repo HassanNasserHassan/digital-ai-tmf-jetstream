@@ -1,0 +1,7 @@
+{
+  "journey": "Change",
+  "tmf": "TMF641",
+  "market": "UK",
+  "csmSource": "CSM_Service_Order",
+  "outputs": ["blueprint", "api"]
+}
